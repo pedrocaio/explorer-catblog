@@ -8,6 +8,7 @@
 
 :root {
     font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
 
     --color-brand: #065E7C;
     --color-brand-2: #387E96;
@@ -15,4 +16,94 @@
     --color-gray: #ffffff33;
     --color-title: #202024;
     --color-text: #121214;
+}
+
+/* Header */
+
+header {
+    padding: 1.2rem 2.8rem;
+
+    display: grid;
+    grid-template-columns: 4.0rem 1fr 4.0rem;
+    gap: 2.55rem;
+
+    background: var(--color-brand);
+}
+
+.bg-img {
+    background: var(--color-white);
+    width: 4.0rem;
+    height: 4.0rem;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 2.4rem;
+}
+
+.input-wrapper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input {
+    background: var(--color-brand-2);
+
+    border: 0;
+    border-radius: 0.4rem;
+
+    padding: 1.2rem 1.6rem; 
+    width: 100%;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--color-white);
+
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Main */
+
+main > img {
+    width: 100vw;
+}
+
+.content {
+    padding: 3.1rem 2.2rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.note {
+    display: grid;
+    grid-template-columns: repeat(2, 4.0rem);
+    gap: 1.2rem;
+    margin: 0.8rem 0 3.1rem;
+}
+
+.up, .down {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-brand);
+
+    padding: 1.2rem;
+
+    border-radius: 50%;
+}
+
+main p {
+    font-size: 1.6rem;
+    font-weight: 400rem;
+    line-height: 2.56rem;
 }
